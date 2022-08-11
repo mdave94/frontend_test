@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.cardImg {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+.cardItemContainer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #231e39;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #b3b8cd;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+.cardInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.cardInfoRow {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-style: italic;
+}
+.cardInfoItem {
+  margin: 8px;
+}
+.center {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.dropdown-container {
+  padding: 0;
+  margin: auto;
+  width: 100px;
+  padding-left: 1em;
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  color: #3faffa;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.dropdown-item {
+  margin-top: 10px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+
+  background: white;
+  left: 0px;
+  list-style: none;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+}
+
+.item {
+  margin-top: 10px;
+  width: 80px;
+  font-size: 1.2em;
+}
